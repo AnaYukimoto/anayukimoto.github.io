@@ -327,6 +327,7 @@ img {
   color: #f0f0f0;
   font-size: 20px;
   transition: color 0.3s ease-out;
+  text-shadow: 2px 2px 1px #1f1f1f;
 }
 
 .curriculo:hover{
