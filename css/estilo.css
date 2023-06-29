@@ -94,9 +94,6 @@ img {
 
 /* Mobile Styles */
 @media (max-width: 480px) {
-  #typing-text {
-    font-size: 3rem;
-  }
   h1 {
     font-size: 5rem;
   }
