@@ -150,24 +150,46 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
-      $(document).ready(function () {
-        $('.slick-carousel').slick({
-          autoplay: true,      
-          autoplaySpeed: 2000,  
-          arrows: false,       
-          infinite: true,       
-          speed: 2000,           
-          slidesToShow: 3,      
-          slidesToScroll: 1     
-        });
+     $(document).ready(function () {
+        function setupSlickCarousel() {
+          $('.slick-carousel').slick({
+            autoplay: true,      
+            autoplaySpeed: 2000,  
+            arrows: false,       
+            infinite: true,       
+            speed: 2000,           
+            slidesToShow: 3,      
+            slidesToScroll: 1     
+          });
+        }
 
-        // Adiciona o clique nas setas de navegação
-        $('.slick-prev').click(function () {
-          $('.slick-carousel').slick('slickPrev');
-        });
+        function destroySlickCarousel() {
+          $('.slick-carousel').slick('unslick'); // Destroi o Slick Carousel
+        }
 
-        $('.slick-next').click(function () {
-          $('.slick-carousel').slick('slickNext');
+        setupSlickCarousel();
+
+        $(window).on('resize', function () {
+          if ($(window).width() <= 767) {
+            // Se a largura da tela for menor ou igual a 767 pixels (celular), destrói o carousel atual e cria um novo com configuração para exibir um projeto por vez
+            destroySlickCarousel();
+            $('.responsive-carousel').slick({
+              autoplay: true,      
+              autoplaySpeed: 2000,  
+              arrows: false,       
+              infinite: true,       
+              speed: 2000,           
+              slidesToShow: 1,   
+              slidesToScroll: 1 
+                  
+            });
+        
+          } else {
+            // Se a largura da tela for maior que 767 pixels, destrói o carousel atual e cria um novo com configuração para exibir três projetos por vez
+            destroySlickCarousel();
+            setupSlickCarousel();
+            
+          }
         });
       });
     </script>

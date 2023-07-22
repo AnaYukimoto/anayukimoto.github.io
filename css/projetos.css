@@ -49,23 +49,21 @@
     padding: 2rem 0.5rem;
 }
 
-@media (max-width: 600px) {
-    .slick-prev {
-        left: 10px;
-    }
-    
-    .slick-next {
-        right: 10px;
-    }
-}
-
 .skills {
     display: flex;
     justify-content:space-around;
     margin-top: 10%;
-  }
+}
 
-  .skills i {
+.skills i {
     font-size: 50px; 
     cursor: pointer;
-  }
+}
+
+
+@media (max-width: 767px) {
+.slick-prev,
+.slick-next {
+    display: none;
+}
+}
