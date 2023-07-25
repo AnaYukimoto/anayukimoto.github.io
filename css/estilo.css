@@ -296,6 +296,10 @@ img {
   padding: 1rem 2rem;
 }
 
+.skills {
+  display: flex;
+  align-items: center;
+}
 /* Contact section */
 
 .contact-section {

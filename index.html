@@ -132,7 +132,8 @@
           </a>
         </div>
         <div class="slick-slide">
-          <a href="https://github.com/AnaYukimoto/planetravel.github.io.git" target="_blank" class="project project-tile">
+          <a href="https://github.com/AnaYukimoto/planetravel.github.io.git" target="_blank"
+            class="project project-tile">
             <img class="project-image" src="img/projetos/indexAviao.png" alt="" width="500px" />
             <p class="project-title">
               <span class="code">&lt;</span>
@@ -150,16 +151,16 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
-     $(document).ready(function () {
+      $(document).ready(function () {
         function setupSlickCarousel() {
           $('.slick-carousel').slick({
-            autoplay: true,      
-            autoplaySpeed: 2000,  
-            arrows: false,       
-            infinite: true,       
-            speed: 2000,           
-            slidesToShow: 3,      
-            slidesToScroll: 1     
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            infinite: true,
+            speed: 2000,
+            slidesToShow: 3,
+            slidesToScroll: 1
           });
         }
 
@@ -174,41 +175,42 @@
             // Se a largura da tela for menor ou igual a 767 pixels (celular), destrói o carousel atual e cria um novo com configuração para exibir um projeto por vez
             destroySlickCarousel();
             $('.responsive-carousel').slick({
-              autoplay: true,      
-              autoplaySpeed: 2000,  
-              arrows: false,       
-              infinite: true,       
-              speed: 2000,           
-              slidesToShow: 1,   
-              slidesToScroll: 1 
-                  
+              autoplay: true,
+              autoplaySpeed: 2000,
+              arrows: false,
+              infinite: true,
+              speed: 2000,
+              slidesToShow: 1,
+              slidesToScroll: 1
+
             });
-        
+
           } else {
             // Se a largura da tela for maior que 767 pixels, destrói o carousel atual e cria um novo com configuração para exibir três projetos por vez
             destroySlickCarousel();
             setupSlickCarousel();
-            
+
           }
         });
       });
     </script>
-    
+
     <div class="skills">
-      <i class="fa-brands fa-html5 fa-2xl" style="color:rgb(255, 106, 0)" title="HTML5"></i>
-      <i class="fa-brands fa-css3-alt fa-2xl" style="color:rgb(0, 170, 255)" title="CSS3"></i>
-      <i class="fa-brands fa-square-js fa-2xl" style="color:rgb(255, 221, 0)" title="JavaScript"></i>
-      <i class="fa-brands fa-php fa-2xl" style="color:rgb(124, 65, 243)" title="PHP"></i>
-      <i class="fa-brands fa-python fa-2xl" style="color:rgb(0, 128, 255)" title="Python"></i>
-      <i class="fa-brands fa-java fa-2xl" style="color:rgb(255, 0, 0)" title="Java"></i>
-      <i class="fa-solid fa-bars fa-xl" style="color:rgb(255, 106, 0)" title="SQL"></i>
+      <i class="fa-brands fa-html5 " style="color:rgb(255, 106, 0)" title="HTML5"></i>
+      <i class="fa-brands fa-css3-alt " style="color:rgb(0, 170, 255)" title="CSS3"></i>
+      <i class="fa-brands fa-bootstrap " style="color: rgb(124, 65, 243)" title="Bootstrap"></i>
+      <i class="fa-brands fa-square-js " style="color:rgb(255, 221, 0)" title="JavaScript"></i>
+      <i class="fa-brands fa-java " style="color:rgb(255, 0, 0)" title="Java"></i>
+      <i class="fa-brands fa-php " style="color:rgb(124, 65, 243)" title="PHP"></i>
+      <i class="fa-brands fa-python"  style="color:rgb(0, 170, 255)" title="Python"></i>
+      <i class="fas fa-database " style="color:rgb(255, 106, 0)" title="SQL"></i> 
     </div>
-    
+
   </section>
   <!-- final do PROJECTS SECTION -->
 
   <!-- começo do CONTACT SECTION -->
-  <section class="contact-section" >
+  <section class="contact-section">
     <div class="contact-section-header">
       <h2>Quer saber mais?</h2>
       <p style="color:#e90a63">Entre em contato comigo...</p>
@@ -234,4 +236,5 @@
   <!-- final do FOOTER SECTION -->
 
 </body>
+
 </html>
