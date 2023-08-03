@@ -2,11 +2,11 @@
 
 /* Custom properties/variables  */
 :root {
-    --main-white: #f0f0f0;
-    --main-pink: #e90a63;
-    --main-purple: rgb(28, 2, 59);
-    --main-gray: #303841;
-  }
+  --main-white: #f0f0f0;
+  --main-pink: #e90a63;
+  --main-purple: rgb(28, 2, 59);
+  --main-gray: #303841;
+}
 
 * {
   margin: 0;
@@ -16,7 +16,7 @@
   font-family: 'Poppins', sans-serif;
   text-align: justify;
   font-size: 14px;
- 
+
 }
 
 body {
@@ -27,11 +27,11 @@ body {
 
 }
 
-.nome{
+.nome {
   text-align: center;
   font-size: 20px;
   font-weight: 600;
-    
+
 }
 
 .bold {
@@ -45,16 +45,16 @@ body {
   max-width: 1100px;
   margin: 50px auto;
   margin-top: 10%;
-  display: flex; 
+  display: flex;
   box-shadow: 0 2px 5px 2px hsla(0, 0%, 0%, 0.541);
   border-radius: 10px;
-  
+
 }
 
 .resume .resume_left {
-    width:330px;
-    background: var(--main-pink);
-    border-radius: 10px 0 0 10px;
+  width: 330px;
+  background: var(--main-pink);
+  border-radius: 10px 0 0 10px;
 }
 
 
@@ -114,9 +114,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .icon:hover {
-    transform: scale(1.1, 1.1);
- 
+  transform: scale(1.1, 1.1);
+
 }
 
 .resume .resume_left ul li {
@@ -126,7 +127,6 @@ body {
 .resume .resume_left .resume_skills ul li {
   display: flex;
   margin-bottom: 10px;
-
   justify-content: space-between;
   align-items: center;
 }
@@ -136,15 +136,11 @@ body {
 }
 
 .resume .resume_left .resume_skills ul li .skill_progress {
-  width: 60%;
-  margin: 0 5px;
+  width: 55%;
+  margin: 0 5px 0 5px;
   height: 5px;
-  background:var(--main-purple);
+  background: var(--main-purple);
   position: relative;
-}
-
-.resume .resume_left .resume_skills ul li .skill_per {
-  width: 15%;
 }
 
 .resume .resume_left .resume_skills ul li .skill_progress span {
@@ -161,20 +157,21 @@ body {
 }
 
 .resume .resume_right {
-    width: 920px;
-    background: #00000056;
-    padding: 25px;
-    border-radius: 0 10px 10px 0;
+  width: 920px;
+  background: #00000056;
+  padding: 25px;
+  border-radius: 0 10px 10px 0;
 }
 
 .resume .resume_right .bold {
-  color:var(--main-pink);
+  color: var(--main-pink);
 }
 
 .resume .resume_right .resume_work ul,
-.resume .resume_right .resume_education ul {
-    padding-left: 40px;
-    overflow: hidden;
+.resume .resume_right .resume_education ul,
+.resume .resume_right .resume_languages ul {
+  padding-left: 40px;
+  overflow: hidden;
 }
 
 .resume .resume_right ul li {
@@ -196,15 +193,16 @@ body {
 }
 
 .resume .resume_right .resume_work ul li:before,
-.resume .resume_right .resume_education ul li:before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: -25px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    border: 2px solid var(--main-pink);
+.resume .resume_right .resume_education ul li:before,
+.resume .resume_right .resume_languages ul li:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid var(--main-pink);
 }
 
 .resume .resume_right .resume_hobby ul {
@@ -218,10 +216,10 @@ body {
   border: 2px solid var(--main-pink);
   border-radius: 50%;
   position: relative;
-  color:var(--main-pink);
+  color: var(--main-pink);
 }
 
-.resume .resume_right .resume_hobby ul li  {
+.resume .resume_right .resume_hobby ul li {
   font-size: 30px;
 }
 
@@ -232,50 +230,74 @@ body {
   right: -52px;
   width: 50px;
   height: 2px;
-  background:var(--main-pink);
+  background: var(--main-pink);
 }
 
 .resume .resume_right .resume_hobby ul li:last-child:before {
   display: none;
 }
 
+.posicao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5px;
+
+}
+.nivel {
+  display: flex;
+}
+
+.bolinha {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: var(--main-purple);
+}
+
+.bolinha.ativa {
+  background-color: var(--main-white);
+}
 
 .btn {
-    background: var(--main-pink);
-    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.908));
-    color: #fff;
-    font-size: large;
-    display: block;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 5% 0 0 40% ;
-    position: relative;
+  background: var(--main-pink);
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.908));
+  color: #fff;
+  font-size: large;
+  display: block;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 11% 0 0 40%;
+  position: relative;
 }
-  
+
 .btn:hover {
   transform: scale(1.1, 1.1);
   background-color: #d10d5b;
 }
 
-.btn > i {
+.btn>i {
   margin-left: 10px;
 }
 
 @media (max-width: 600px) {
 
-  .nome{
+  .nome {
     font-size: 40px;
   }
+
   .resume {
     flex-direction: column;
     margin: 0;
   }
-  
-  .resume_profile{
+
+  .resume_profile {
     margin-top: 20%;
   }
+
   .resume .resume_left {
     background: #00000056;
   }
@@ -289,6 +311,7 @@ body {
     width: 100%;
     margin: 0;
   }
+
   .resume .resume_left .resume_profile img {
     width: 50%;
     height: 50%;
@@ -296,6 +319,6 @@ body {
   }
 
   .btn {
-      margin: 5% 0 0 25% ;
+    margin: 5% 0 0 25%;
   }
 }

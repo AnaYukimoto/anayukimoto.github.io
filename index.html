@@ -5,11 +5,13 @@
   <meta charset="UTF-8" />
   <title>Inicial</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/estilo.css" />
-  <link rel="stylesheet" href="css/projetos.css">
-  <link rel="icon" type="icon" href="img/logo.png" />
+  <link rel="stylesheet" href="./css/estilo.css" />
+  <link rel="stylesheet" href="./css/projetos.css">
+  <link rel="stylesheet" href="./css/cardInicial.css">
+  <link rel="icon" type="icon" href="./img/logo.png" />
   <script src="js/nav.js"></script>
   <script src="https://kit.fontawesome.com/0df5057ab7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
@@ -44,15 +46,23 @@
 
 
   <!-- começo do  WELCOME SECTION -->
-  <section id="welcome-section" class="welcome-section ">
-    <h1>Olá, eu sou a Ana</h1>
-    <p id="typing-text">uma desenvolvedora de sistemas</p>
-    <a href="curriculo.html" class="curriculo">
-      <span class="code">&lt;</span>
-      Meu Currículo
-      <span class="code">&#47;&gt;</span>
-    </a>
+  <section id="welcome-section" class="welcome-section">
+    <div class="content">
+      <div class="text-content">
+        <h1>Olá, eu sou a Ana</h1>
+        <p id="typing-text">uma desenvolvedora de sistemas</p>
+        <a href="curriculo.html" class="curriculo">
+          <span class="code">&lt;</span>
+          Meu Currículo
+          <span class="code">&#47;&gt;</span>
+        </a>
+      </div>
+
+      <div class="card"></div>
+
+    </div>
   </section>
+
 
   <script>
     function typeWriter(textElement, delay) {
@@ -94,8 +104,7 @@
     </section>
 
     <div style="position: relative;" class="carousel-projects">
-      <!-- Seta de navegação à esquerda -->
-      <div class="slick-prev"><i class="fa-solid fa-caret-left"></i></div>
+
       <div class="slick-carousel">
         <div class="slick-slide">
           <a href="https://codepen.io/AninhaYuki/pen/GRXqRXg" target="_blank" class="project project-tile">
@@ -116,6 +125,17 @@
             <p class="project-title">
               <span class="code">&lt;</span>
               Projetos em Python
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+        </div>
+        <div class="slick-slide">
+          <a href="https://github.com/AnaYukimoto/panesoffice.github.io.git" target="_blank"
+            class="project project-tile">
+            <img class="project-image" src="img/projetos/panesoffice.png" alt="" width="500px" />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Site de Compras - Padaria
               <span class="code">&#47;&gt;</span>
             </p>
           </a>
@@ -143,12 +163,10 @@
           </a>
         </div>
       </div>
-      <!-- Seta de navegação à direita -->
-      <div class="slick-next"><i class="fa-solid fa-caret-right"></i></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
       $(document).ready(function () {
@@ -156,7 +174,8 @@
           $('.slick-carousel').slick({
             autoplay: true,
             autoplaySpeed: 2000,
-            arrows: false,
+            prevArrow: '<div class="slick-prev"><i class="fa-solid fa-caret-left"></i></div>',
+            nextArrow: '<div class="slick-next"><i class="fa-solid fa-caret-right"></i></div>',
             infinite: true,
             speed: 2000,
             slidesToShow: 3,
@@ -174,22 +193,20 @@
           if ($(window).width() <= 767) {
             // Se a largura da tela for menor ou igual a 767 pixels (celular), destrói o carousel atual e cria um novo com configuração para exibir um projeto por vez
             destroySlickCarousel();
-            $('.responsive-carousel').slick({
+            $('.carousel-projects').slick({
               autoplay: true,
               autoplaySpeed: 2000,
-              arrows: false,
+              prevArrow: '<div class="slick-prev"><i class="fa-solid fa-caret-left"></i></div>',
+              nextArrow: '<div class="slick-next"><i class="fa-solid fa-caret-right"></i></div>',
               infinite: true,
               speed: 2000,
               slidesToShow: 1,
               slidesToScroll: 1
-
             });
-
           } else {
             // Se a largura da tela for maior que 767 pixels, destrói o carousel atual e cria um novo com configuração para exibir três projetos por vez
             destroySlickCarousel();
             setupSlickCarousel();
-
           }
         });
       });
@@ -202,8 +219,8 @@
       <i class="fa-brands fa-square-js " style="color:rgb(255, 221, 0)" title="JavaScript"></i>
       <i class="fa-brands fa-java " style="color:rgb(255, 0, 0)" title="Java"></i>
       <i class="fa-brands fa-php " style="color:rgb(124, 65, 243)" title="PHP"></i>
-      <i class="fa-brands fa-python"  style="color:rgb(0, 170, 255)" title="Python"></i>
-      <i class="fas fa-database " style="color:rgb(255, 106, 0)" title="SQL"></i> 
+      <i class="fa-brands fa-python" style="color:rgb(0, 170, 255)" title="Python"></i>
+      <i class="fas fa-database " style="color:rgb(255, 106, 0)" title="SQL"></i>
     </div>
 
   </section>
