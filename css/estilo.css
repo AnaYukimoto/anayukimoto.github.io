@@ -243,7 +243,9 @@ img {
   font-size: 20px;
   transition: color 0.3s ease-out;
   text-shadow: 2px 2px 5px #000000;
-  margin-left: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .curriculo:hover {
