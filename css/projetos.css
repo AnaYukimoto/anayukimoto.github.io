@@ -84,8 +84,50 @@
     cursor: pointer;
 }
 
-@media (max-width: 28.75em) {
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
 
+.tooltip-text p {
+    text-align: center;
+    color: var(--main-pink);
+    margin-bottom: 5px;
+}
+.tooltip .tooltip-text {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    padding:10px;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    width: 200px;
+    font-size: .8em;
+    background-color: rgba(0, 0, 0, 0.476);
+    color: #fff;
+    box-shadow: 0 2px 5px 2px hsla(0, 0%, 0%, 0.334);
+    border-radius: 10px;
+    text-align: justify;
+    white-space: normal;
+    z-index: 1;
+}
+
+.tooltip-text ul {
+    list-style-type: disc;
+    margin-left: 0.5em;
+    padding-left: 1em;
+}
+
+::marker{
+    color: var(--main-pink);
+}
+
+.tooltip:hover .tooltip-text {
+    display: block;
+}
+
+@media (max-width: 560px) {
     .slick-prev,
     .slick-next {
         display: none;
@@ -97,5 +139,9 @@
 
     .contact-section-header>h2 {
         font-size: 5rem;
+    }
+
+    .tooltip .tooltip-text {
+        max-width: 100px;
     }
 }

@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/estilo.css" />
   <link rel="stylesheet" href="./css/projetos.css">
-  <link rel="stylesheet" href="./css/cardInicial.css">
   <link rel="icon" type="icon" href="./img/logo.png" />
   <script src="js/nav.js"></script>
   <script src="https://kit.fontawesome.com/0df5057ab7.js" crossorigin="anonymous"></script>
@@ -47,22 +46,17 @@
 
   <!-- começo do  WELCOME SECTION -->
   <section id="welcome-section" class="welcome-section">
-    <div class="content">
       <div class="text-content">
         <h1>Olá, eu sou a Ana</h1>
         <p id="typing-text">uma desenvolvedora de sistemas</p>
-        <a href="curriculo.html" class="curriculo">
-          <span class="code" style="margin: 5px;">&lt;</span>
-           Meu Currículo 
-          <span class="code" style="margin: 5px;">&#47;&gt;</span>
+        <a href="curriculo.html" >
+          <button class="curriculo">
+          Meu Currículo
+        </button>
         </a>
       </div>
-
-      <div class="card"></div>
-
-    </div>
+      
   </section>
-
 
   <script>
     function typeWriter(textElement, delay) {
@@ -120,9 +114,7 @@
         </div>
         <div class="slick-slide">
           <a href="https://github.com/AnaYukimoto/zooli.github.io.git" target="_blank" class="project project-tile">
-            <img class="project-image"
-              src="img/projetos/zooli.png"
-              alt="project" />
+            <img class="project-image" src="img/projetos/zooli.png" alt="project" />
             <p class="project-title">
               <span class="code">&lt;</span>
               Site Completo - TCC
@@ -147,7 +139,7 @@
             <img class="project-image" src="img/projetos/panesoffice.png" alt="" width="500px" />
             <p class="project-title">
               <span class="code">&lt;</span>
-              Site de Compras - Padaria
+              Site para Padaria
               <span class="code">&#47;&gt;</span>
             </p>
           </a>
@@ -169,7 +161,7 @@
             <img class="project-image" src="img/projetos/indexAviao.png" alt="" width="500px" />
             <p class="project-title">
               <span class="code">&lt;</span>
-              Simulação Compras
+              Site de Viagem
               <span class="code">&#47;&gt;</span>
             </p>
           </a>
@@ -225,14 +217,95 @@
     </script>
 
     <div class="skills">
-      <i class="fa-brands fa-html5 " style="color:rgb(255, 106, 0)" title="HTML5"></i>
-      <i class="fa-brands fa-css3-alt " style="color:rgb(0, 170, 255)" title="CSS3"></i>
-      <i class="fa-brands fa-bootstrap " style="color: rgb(124, 65, 243)" title="Bootstrap"></i>
-      <i class="fa-brands fa-square-js " style="color:rgb(255, 221, 0)" title="JavaScript"></i>
-      <i class="fa-brands fa-java " style="color:rgb(255, 0, 0)" title="Java"></i>
-      <i class="fa-brands fa-php " style="color:rgb(124, 65, 243)" title="PHP"></i>
-      <i class="fa-brands fa-python" style="color:rgb(0, 170, 255)" title="Python"></i>
-      <i class="fas fa-database " style="color:rgb(255, 106, 0)" title="SQL"></i>
+      <div class="tooltip">
+        <i class="fa-brands fa-html5 " style="color:rgb(255, 106, 0)"></i>
+        <div class="tooltip-text">
+          <p>HTML5</p>
+          <ul>
+            <li>Presente em todos os projetos</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tooltip">
+        <i class="fa-brands fa-css3-alt " style="color:rgb(0, 170, 255)"></i>
+        <div class="tooltip-text">
+          <p>CSS3</p>
+          <ul>
+            <li>Presente em todos os projetos</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tooltip">
+        <i class="fa-brands fa-bootstrap " style="color: rgb(124, 65, 243)"></i>
+        <div class="tooltip-text">
+          <p>Bootstrap</p>
+          <ul>
+            <li>Site para Padaria</li>
+            <li>Site de Viagem</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tooltip">
+        <i class="fa-brands fa-square-js " style="color:rgb(255, 221, 0)"></i>
+        <div class="tooltip-text">
+          <p>JavaScript</p>
+          <ul>
+            <li>Site Completo - TCC</li>
+            <li>Site para Padaria</li>
+            <li>Site de Viagem</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tooltip">
+        <i class="fa-brands fa-java " style="color:rgb(255, 0, 0)"></i>
+        <div class="tooltip-text">
+          <p>Java</p>
+          <ul>
+            <li>Site Completo - TCC</li>
+            <li>Em breve mais projetos</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tooltip">
+        <i class="fa-brands fa-php " style="color:rgb(124, 65, 243)"></i>
+        <div class="tooltip-text">
+          <p>PHP</p>
+          <ul>
+            <li>Site Completo - TCC</li>
+            <li>Site para Padaria</li>
+            <li>Site de Viagem</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tooltip">
+        <i class="fa-brands fa-python" style="color:rgb(0, 170, 255)"></i>
+        <div class="tooltip-text">
+          <p>Python</p>
+          <ul>
+            <li>Projetos em Python</li>
+            <li>Em breve mais projetos</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="tooltip">
+        <i class="fas fa-database " style="color:rgb(255, 106, 0)"></i>
+        <div class="tooltip-text">
+          <p>SQL</p>
+          <ul>
+            <li>Site Completo - TCC</li>
+            <li>Em breve mais projetos</li>
+          </ul>
+        </div>
+      </div>
+     
+    </div>
     </div>
 
   </section>
