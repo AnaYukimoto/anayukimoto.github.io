@@ -128,17 +128,13 @@
 }
 
 @media (max-width: 560px) {
-    .slick-prev,
-    .slick-next {
-        display: none;
-    }
 
     .projects-section-header {
-        font-size: 4rem;
+        font-size: 4.6rem;
     }
 
     .contact-section-header>h2 {
-        font-size: 5rem;
+        font-size: 5.5rem;
     }
 
     .tooltip .tooltip-text {
