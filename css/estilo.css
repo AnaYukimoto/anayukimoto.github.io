@@ -39,7 +39,12 @@ html {
     font-size: 58%;
   }
 }
-
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 57%;
+  }
+}
 
 /* Base styles */
 
@@ -89,7 +94,7 @@ img {
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
 }
@@ -358,7 +363,7 @@ footer>p {
   }
 
   .p-contact{
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   footer {
