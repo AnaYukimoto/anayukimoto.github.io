@@ -140,4 +140,7 @@
     .tooltip .tooltip-text {
         max-width: 100px;
     }
+    .skills i {
+        font-size:30px;
+    }
 }
