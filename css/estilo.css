@@ -9,7 +9,6 @@
 /* Base reset */
 * {
   margin: 0;
-  padding: 0;
 }
 
 /* box-sizing and font sizing */
@@ -121,18 +120,11 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  padding-top: 0rem;
 }
 
 .nav-list.active a:hover {
   background: var(--main-pink);
   color: var(--main-gray);
-}
-
-.logo {
-  height: 50%;
-  width: 50px;
 }
 
 .nav-list a {
@@ -143,6 +135,11 @@ img {
 
 .nav-list a:hover {
   background: #d10d5b;
+}
+
+.logo {
+  height: 50%;
+  width: 50px;
 }
 
 .menu-toggle {
@@ -157,13 +154,6 @@ img {
 
 .menu-toggle-container {
   margin-left: auto;
-}
-
-@media (max-width: 600px) {
-  .menu-toggle {
-    display: flex;
-    align-items: center;
-  }
 }
 
 .menu-toggle-icon {
@@ -338,12 +328,33 @@ footer>p {
   color: var(--main-pink);
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+  .logo{
+    padding: 10px 0 10px 0;
+  }
   .nav-list {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background: var(--main-pink);
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
-    padding-top: 6rem;
+    width: 100%;
+    z-index: -1;
+    transition: top 0.3s ease; 
+    padding: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  }
+  .nav-list.active {
+    top: 0; 
   }
 
   .curriculo {
