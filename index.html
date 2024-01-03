@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,10 +13,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
-  <!-- começo da NAV -->
+  <!-- NAV -->
   <nav id="navbar" class="nav">
 
     <a href="index.html">
@@ -42,10 +43,10 @@
       <span class="menu-toggle-icon"></span>
     </button>
   </nav>
-  <!-- final da NAV -->
+  <!-- END - NAV -->
 
 
-  <!-- começo do  WELCOME SECTION -->
+  <!-- WELCOME SECTION -->
   <section id="welcome-section" class="welcome-section">
     <div class="text-content">
       <h1>Olá, eu sou a Ana</h1>
@@ -76,11 +77,16 @@
     const typingText = document.getElementById('typing-text');
     typeWriter(typingText, 100);
 
+
+    window.onbeforeunload = () => {
+      for (const form of document.getElementsByTagName('form')) {
+        form.reset();
+      }
+    }
   </script>
+  <!-- END -WELCOME SECTION -->
 
-  <!-- final do WELCOME SECTION -->
-
-  <!-- começo do PROJECTS SECTION -->
+  <!-- PROJECTS SECTION -->
   <section id="projects" class="projects-section">
     <h2 class="projects-section-header">Alguns dos Meus Projetos:</h2>
 
@@ -301,9 +307,9 @@
     </div>
 
   </section>
-  <!-- final do PROJECTS SECTION -->
+  <!-- END - PROJECTS SECTION -->
 
-  <!-- começo do CONTACT SECTION -->
+  <!-- CONTACT SECTION -->
   <section class="contact-section">
     <div class="contact-section-header">
       <h2>Quer saber mais?</h2>
@@ -320,14 +326,59 @@
         <i class="fas fa-mobile-alt"></i> +55 (11)94941-7826
       </a>
     </div>
-  </section>
-  <!-- END CONTACT SECTION -->
 
-  <!-- começo do FOOTER SECTION -->
+
+    <form id="contact-form">
+    
+      <label>Nome:</label>
+      <input type="name" name="user_name" class="input" required>
+
+      <label>E-mail:</label>
+      <input type="email" name="user_email" class="input" required>
+
+      <label>Mensagem:</label>
+      <textarea name="message" class="textarea" required></textarea>
+
+      <input type="submit" value="Enviar" class="enviar">
+
+    </form>
+   
+
+  </section>
+  
+  <script type="text/javascript">
+    (function() {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init("dSuiextIVvd9hAIo_"); 
+      })();
+      
+
+      window.onload = function() {
+              document.getElementById('contact-form').addEventListener('submit', function(event) {
+                  event.preventDefault();
+                  // generate a five digit number for the contact_number variable
+                  this.contact_number.value = Math.random() * 100000 | 0;
+          
+          emailjs.sendForm('service_42vsbgg', 'template_6yqupmo', this)
+              .then(function() {
+                  console.log('E-mail enviado com sucesso:');
+                  alert('Obrigado! Sua mensagem foi enviada com sucesso.');
+                  form.reset();
+              }, function(error) {
+                  console.error('Erro ao enviar e-mail:', error);
+                  alert('Ocorreu um erro ao enviar a mensagem.');
+                });
+              });
+          }
+  </script> 
+  <!-- END - CONTACT SECTION -->
+
+  <!-- FOOTER SECTION -->
+  </section>
   <footer>
     <p>&copy; Criado por <a>Ana Eliza Yukimoto</a></p>
   </footer>
-  <!-- final do FOOTER SECTION -->
+  <!-- END -FOOTER SECTION -->
 
 </body>
 
