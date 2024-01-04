@@ -420,12 +420,12 @@ footer>p {
     width: 100%;
     text-align: center;
     padding: 0; 
+    gap: 0;
   }
 
   #contact-form {
     width: 100%;
     padding-left:0;
-    gap: 0;
   }
 
   footer {
