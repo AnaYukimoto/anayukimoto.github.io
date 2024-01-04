@@ -28,21 +28,21 @@ html {
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
   html {
-    font-size: 60%;
+    font-size: 55%;
   }
 }
 
 /* 980px / 16px = 61.25em */
 @media (max-width: 61.25em) {
   html {
-    font-size: 58%;
+    font-size: 53%;
   }
 }
 
 /* 460px / 16px = 28.75em */
 @media (max-width: 28.75em) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 }
 
@@ -65,11 +65,11 @@ h2 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5.5rem;
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 4.1rem;
 }
 
 ul {
@@ -94,7 +94,7 @@ img {
   }
 
   h1 {
-    font-size: 4.5rem;
+    font-size: 4.1rem;
   }
 }
 
@@ -129,7 +129,7 @@ img {
 
 .nav-list a {
   display: block;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   padding: 2rem;
 }
 
@@ -233,7 +233,7 @@ img {
   border: 2px solid white; 
   border-radius: 10px;
   padding: 1rem;
-  font-size: 22px;
+  font-size: 20px;
   transition: border-color 0.3s ease-out;
   text-shadow: 2px 2px 5px #000000;
   cursor: pointer;
@@ -255,7 +255,7 @@ img {
 }
 
 .welcome-section p {
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-weight: 200;
   font-style: italic;
   color: var(--main-pink);
@@ -265,7 +265,6 @@ img {
 .text-content {
   text-align: right;
   margin-right: 10%;
-  
 }
 
 /* Contact section */
@@ -275,7 +274,7 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
-  padding: 0 2rem;
+  padding: 0 4rem;
   flex-direction: row;
 
 }
@@ -285,9 +284,6 @@ img {
   flex: 1;
 }
 
-.contact-section-header>h2 {
-  font-size: 6rem;
-}
 
 .contact-section-header>p {
   font-style: italic;
@@ -297,19 +293,21 @@ img {
 
 .contact-links {
   width: 50%;
-  padding: 5% 5% 0 5%;
   float: right;
   clear: right;
-  flex: 1;
   flex-direction: column;
+  display: flex;
+  padding: 2% 0 0 5%;
+  gap: 20px;
 }
 
 #contact-form{
-  width: 35%;
+  width: 50%;
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.853));
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  padding-left: 20rem ;
 }
 
 .input,.textarea{
@@ -323,7 +321,6 @@ img {
 }
 
 .contact-details {
-  font-size: 2.2rem;
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
 }
@@ -335,7 +332,8 @@ img {
 .enviar {
   background: var(--main-purple);
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.908));
-  color: #fff;
+  color: #f0f0f0;
+  transition: color 0.3s ease-out;
   font-size: large;
   display: block;
   padding: 12px 25px;
@@ -347,7 +345,8 @@ img {
 }
 
 .enviar:hover {
-  color: var(--main-pink)
+  color: var(--main-pink);
+
 }
 
 /* Footer */
@@ -373,9 +372,11 @@ footer>p {
     right: 0;
     position: absolute;
   }
+  
   .logo{
     padding: 10px 0 10px 0;
   }
+
   .nav-list {
     position: fixed;
     top: -100%;
@@ -415,18 +416,16 @@ footer>p {
     align-items: stretch;
   }
 
-  .btn{
-    padding: 0;
-    margin: 0;
-  }
-
   .contact-links {
-    width: 100%; 
-    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0; 
   }
 
   #contact-form {
     width: 100%;
+    padding-left:0;
+    gap: 0;
   }
 
   footer {
