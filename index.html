@@ -12,6 +12,9 @@
   <script src="https://kit.fontawesome.com/0df5057ab7.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 
@@ -172,8 +175,8 @@
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+
 
     <script>
       $(document).ready(function () {
@@ -335,7 +338,8 @@
     <label>Mensagem:</label>
     <textarea name="message" class="textarea" required></textarea>
 
-    <input type="submit" value="Enviar" class="enviar"> </input>
+    <input type="submit" value="Enviar" class="enviar">
+    
 
   </form>
 
@@ -344,26 +348,25 @@
       // https://dashboard.emailjs.com/admin/account
       emailjs.init("dSuiextIVvd9hAIo_");
     })();
-
-
+  
     window.onload = function () {
       document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
-        // generate a five digit number for the contact_number variable
-        this.contact_number.value = Math.random() * 100000 | 0;
-
-        emailjs.sendForm('service_42vsbgg', 'template_6yqupmo', this)
+  
+        var form = this; // Adicione esta linha para definir a variável form
+  
+        emailjs.sendForm('service_42vsbgg', 'template_6yqupmo', form)
           .then(function () {
             console.log('E-mail enviado com sucesso:');
-            alert('Obrigado! Sua mensagem foi enviada com sucesso.');
+            alert('Obrigada! Sua mensagem foi enviada com sucesso.');
             form.reset();
           }, function (error) {
             console.error('Erro ao enviar e-mail:', error);
-            alert('Ocorreu um erro ao enviar a mensagem.');
+            alert('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.');
           });
       });
     }
-  </script>
+  </script>  
 
   </section>
   <!-- END - CONTACT SECTION -->
