@@ -8,7 +8,7 @@ Bem-vindo ao meu portfólio! Este é um espaço onde compartilho meus projetos, 
 - Rosa: ![Rosa](https://via.placeholder.com/15/E90A63/000000?text=+) `#e90a63`
 - Roxo: ![Roxo](https://via.placeholder.com/15/1C023B/000000?text=+) `#1c023b`
 
-As cores base do meu portfólio são preto e rosa, refletindo minha personalidade e estilo. Essas cores são usadas para transmitir uma sensação de elegância, modernidade e criatividade em todo o meu portfólio.
+As cores base do meu portfólio são preto, rosa e roxo, para transmitir uma sensação de elegância, modernidade e criatividade em todo o meu portfólio.
 
 ## Conteúdo do Portfólio
 
