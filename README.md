@@ -22,7 +22,7 @@ No futuro, planejo incluir certificados e conquistas relevantes neste portfólio
 
 ## Captura de Tela do Portfólio
 
-![Imagem do Portfólio de Ana Yukimoto](.imgPortfolio)
+![Imagem do Portfólio de Ana Yukimoto](./imgPortfolio.png)
 
 ## Acesso ao Portfólio
 
