@@ -14,7 +14,7 @@ As cores base do meu portfólio são preto, rosa e roxo, para transmitir uma sen
 
 O projeto é desenvolvido utilizando as seguintes tecnologias:
 
-![HTML](https://img.icons8.com/color/48/000000/html-5.png) ![CSS](https://img.icons8.com/color/48/000000/css3.png) ![JavaScript](https://img.icons8.com/color/48/000000/javascript.png) !
+![HTML](https://img.icons8.com/color/48/000000/html-5.png) ![CSS](https://img.icons8.com/color/48/000000/css3.png) ![JavaScript](https://img.icons8.com/color/48/000000/javascript.png) 
 
 ## Conteúdo do Portfólio
 
