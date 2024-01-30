@@ -10,6 +10,12 @@ Bem-vindo ao meu portfólio! Este é um espaço onde compartilho meus projetos, 
 
 As cores base do meu portfólio são preto, rosa e roxo, para transmitir uma sensação de elegância, modernidade e criatividade em todo o meu portfólio.
 
+## Tecnologias Utilizadas
+
+O projeto é desenvolvido utilizando as seguintes tecnologias:
+
+![HTML](https://img.icons8.com/color/48/000000/html-5.png) ![CSS](https://img.icons8.com/color/48/000000/css3.png) ![JavaScript](https://img.icons8.com/color/48/000000/javascript.png) !
+
 ## Conteúdo do Portfólio
 
 - **Projetos:** Explore uma variedade de projetos nos quais tenho trabalhado. Cada projeto é uma oportunidade para aprender, experimentar e crescer como profissional.
