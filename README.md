@@ -26,7 +26,7 @@ O projeto é desenvolvido utilizando as seguintes tecnologias:
 
 No futuro, planejo incluir certificados e conquistas relevantes neste portfólio. Fique atento para atualizações!
 
-## Captura de Tela do Portfólio
+## Imagem do Portfólio
 
 ![Imagem do Portfólio de Ana Yukimoto](./imgPortfolio.png)
 
