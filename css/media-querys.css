@@ -1,0 +1,191 @@
+/* screen size divided by browser base font size */
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    html {
+        font-size: 53%;
+    }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+    html {
+        font-size: 50%;
+    }
+
+}
+
+
+@media (min-width: 600px) {
+    .nav-links-container {
+        display: block;
+    }
+
+    .nav-list {
+        display: flex;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #typing-text {
+        font-size: 2.3rem;
+    }
+
+    h1 {
+        font-size: 4.1rem;
+    }
+
+
+    .nav-links-container {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    .logo {
+        padding: 10px 0 10px 0;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background: var(--main-pink);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        z-index: -1;
+        transition: top 0.3s ease;
+        padding: 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-list.active {
+        top: 0;
+    }
+
+    .curriculo {
+        align-items: center;
+        margin-top: 15%
+    }
+
+    .welcome-section {
+        background-image: none;
+        justify-content: center;
+    }
+
+    .text-content {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .contact-section-header>h2 {
+        font-size: 3.3rem;
+    }
+
+    .contact-section {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .contact-links {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        gap: 0;
+    }
+
+    #contact-form {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*Curriculo*/
+
+
+    .name {
+        font-size: 3.3rem;
+        line-height: 1.5;
+    }
+
+    .resume {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .resume_profile {
+        margin-top: 20%;
+    }
+
+    .resume .resume_left {
+        background: #00000056;
+    }
+
+    .resume .resume_left .bold {
+        color: var(--main-pink);
+    }
+
+    .resume .resume_left,
+    .resume .resume_right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .resume .resume_left .resume_profile img {
+        width: 50%;
+        height: 50%;
+        margin: 10% 0 0 25%;
+    }
+
+    .btn__baixar {
+        margin: 5% 0 0 25%;
+    }
+
+    /*Projetos*/
+
+    .project-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .projects-section-header {
+        font-size: 3.3rem;
+    }
+
+    .contact-projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tooltip .tooltip-text {
+        max-width: 100px;
+    }
+
+    .skills i {
+        font-size: 30px;
+    }
+
+}

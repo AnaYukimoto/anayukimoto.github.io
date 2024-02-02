@@ -1,10 +1,3 @@
-:root {
-    --main-white: #ffffff;
-    --main-pink: #e90a63;
-    --main-purple: #1c023b;
-    --main-gray: #303841;
-}
-
 .projects-section {
     text-align: center;
     padding: 10rem 2rem;
@@ -15,10 +8,26 @@
     font-size: 4rem;
 }
 
+.project-section {
+    margin-bottom: 3%;
+}
+
 .project-title {
     font-size: 2rem;
     padding: 2rem 0.5rem;
 }
+
+.contact-projetos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    text-align: center;
+    width: auto;
+}
+
 
 .btn {
     display: inline-block;
@@ -94,12 +103,13 @@
     color: var(--main-pink);
     margin-bottom: 5px;
 }
+
 .tooltip .tooltip-text {
     display: none;
     position: absolute;
     top: 100%;
     left: 50%;
-    padding:10px;
+    padding: 10px;
     margin-top: 20px;
     transform: translateX(-50%);
     width: 200px;
@@ -119,28 +129,10 @@
     padding-left: 1em;
 }
 
-::marker{
+::marker {
     color: var(--main-pink);
 }
 
 .tooltip:hover .tooltip-text {
     display: block;
-}
-
-@media (max-width: 560px) {
-
-    .projects-section-header {
-        font-size: 4.6rem;
-    }
-
-    .contact-section-header>h2 {
-        font-size: 5.3rem;
-    }
-
-    .tooltip .tooltip-text {
-        max-width: 100px;
-    }
-    .skills i {
-        font-size:30px;
-    }
 }
