@@ -1,0 +1,46 @@
+
+body {
+    background-color: #000;
+    background-image: linear-gradient(50deg, #0e0e0e 0%, #1d1e1f 60%, #0e0e0e 100%);
+    font-size: 14px;
+    padding: 0;
+    text-align: justify;
+}
+
+h2{
+    margin-top: 10%;
+}
+
+.certificates-section {
+    text-align: center;
+    padding: 10rem 2rem;
+}
+
+.certificates-section-header {
+    margin: 0 auto 3rem auto;
+    font-size: 4rem;
+}
+
+.certificates-section {
+    margin-bottom: 3%;
+}
+
+.certificates-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+
+.contact-certificates {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.code {
+    color: #f0f0f0;
+    transition: color 0.3s ease-out;
+}
+
+.certificates:hover .code {
+    color: var(--main-pink);
+}
