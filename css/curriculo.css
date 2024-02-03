@@ -6,7 +6,7 @@ body {
   text-align: justify;
 }
 
-.nme {
+.name {
   text-align: center;
   font-size: 20px;
   font-weight: 600;
@@ -146,8 +146,9 @@ body {
   color: var(--main-pink);
 }
 
-.resume .resume_right .resume_work ul,
+
 .resume .resume_right .resume_education ul,
+.resume .resume_right .resume_courses ul,
 .resume .resume_right .resume_languages ul {
   padding-left: 40px;
   overflow: hidden;
@@ -171,8 +172,9 @@ body {
   margin-bottom: 0;
 }
 
-.resume .resume_right .resume_work ul li:before,
+
 .resume .resume_right .resume_education ul li:before,
+.resume .resume_right .resume_courses ul li:before,
 .resume .resume_right .resume_languages ul li:before {
   content: "";
   position: absolute;
