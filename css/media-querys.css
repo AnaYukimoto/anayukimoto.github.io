@@ -188,4 +188,21 @@
         font-size: 30px;
     }
 
+    /*Certificados*/
+
+    .card__certificates {
+        column-count: 2;
+        column-gap: 20px;
+        flex-direction: column;
+
+    }
+
+    .card__certificates img {
+        width: 100%;
+        margin-bottom: 10px;
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
 }

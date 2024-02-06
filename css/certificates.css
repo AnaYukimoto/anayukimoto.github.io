@@ -1,4 +1,3 @@
-
 body {
     background-color: #000;
     background-image: linear-gradient(50deg, #0e0e0e 0%, #1d1e1f 60%, #0e0e0e 100%);
@@ -7,7 +6,7 @@ body {
     text-align: justify;
 }
 
-h2{
+h2 {
     margin-top: 10%;
 }
 
@@ -42,5 +41,52 @@ h2{
 }
 
 .certificates:hover .code {
+    color: var(--main-pink);
+}
+
+/*Pagina Certificates*/
+.container_certificates {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    break-inside: avoid;
+    margin-top: 8%;
+    padding: 20px;
+}
+
+.card__certificates {
+    display: flex;
+    border-radius: 10px;
+    background-color: #00000056;
+    box-shadow: 0 2px 5px 2px hsla(0, 0%, 0%, 0.541);
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 85%;
+    max-width: 100%;
+
+}
+
+.card__certificates img {
+    width: 250px;
+    height: auto;
+}
+
+.card_content__certificates {
+    padding: 20px;
+}
+
+.card_content__certificates .subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card_content__certificates p {
+    margin-bottom: 10px;
+}
+
+.card_content__certificates a {
+    text-decoration: none;
     color: var(--main-pink);
 }
