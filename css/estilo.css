@@ -237,29 +237,28 @@ img {
 }
 
 
-.contact-section-header>p {
+.contact-section-header > p {
   font-style: italic;
   text-align: center;
+  color: var(--main-pink);
 
 } 
 
 .contact-links {
-  width: 50%;
-  float: right;
-  clear: right;
-  flex-direction: column;
-  display: flex;
-  padding: 2% 0 0 5%;
-  gap: 20px;
+  width: 100%;
+  margin-bottom: 2%;
+  text-align: center;
+
 }
 
 #contact-form{
-  width: 50%;
-  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.853));
+  width: 60%;
+  filter: drop-shadow(2px 3px rgba(0, 0, 0, 0.853));
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   margin-bottom: 5rem;
-  padding-left: 20rem ;
+
 }
 
 .input,.textarea{
@@ -311,7 +310,7 @@ footer {
   border-top: 4px solid var(--main-pink);
 }
 
-footer>p {
+footer > p {
   margin: 2rem;
   color: var(--main-pink);
 }

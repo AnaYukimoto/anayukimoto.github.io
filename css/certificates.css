@@ -20,6 +20,13 @@ h2 {
     font-size: 4rem;
 }
 
+.certificates-section-header>p {
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    color: var(--main-pink);
+}
+
 .certificates-section {
     margin-bottom: 3%;
 }
@@ -77,16 +84,25 @@ h2 {
 }
 
 .card_content__certificates .subtitle {
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 600;
     margin-bottom: 10px;
+
 }
 
 .card_content__certificates p {
     margin-bottom: 10px;
+    color: rgb(255, 230, 230);
 }
 
 .card_content__certificates a {
     text-decoration: none;
     color: var(--main-pink);
+}
+
+
+.icon-text i {
+    margin-right: 15px;
+    font-size: 22px;
+
 }
