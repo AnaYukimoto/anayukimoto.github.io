@@ -75,9 +75,12 @@ h2 {
 }
 
 .card__certificates img {
-    width: 250px;
-    height: auto;
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
 }
+
+
 
 .card_content__certificates {
     padding: 20px;

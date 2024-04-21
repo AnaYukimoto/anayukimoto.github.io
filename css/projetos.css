@@ -102,7 +102,6 @@
 .tooltip-text p {
     text-align: center;
     color: var(--main-pink);
-    margin-bottom: 5px;
 }
 
 .tooltip .tooltip-text {
@@ -110,10 +109,9 @@
     position: absolute;
     top: 100%;
     left: 50%;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 5px;
     transform: translateX(-50%);
-    width: 200px;
+    width: 140px;
     font-size: 11px;
     background-color: rgba(0, 0, 0, 0.476);
     color: #fff;
@@ -122,18 +120,20 @@
     text-align: justify;
     white-space: normal;
     z-index: 1;
+    margin-top: 20px;
+}
+
+
+.tooltip:hover .tooltip-text {
+    display: block;
 }
 
 .tooltip-text ul {
     list-style-type: disc;
     margin-left: 0.5em;
-    padding-left: 1em;
+    padding-left: 0.5em;
 }
 
 ::marker {
     color: var(--main-pink);
-}
-
-.tooltip:hover .tooltip-text {
-    display: block;
 }
