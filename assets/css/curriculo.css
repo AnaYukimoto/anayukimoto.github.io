@@ -8,7 +8,7 @@ body {
 
 .name {
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
 
 }
@@ -241,6 +241,21 @@ body {
   background-color: var(--main-white);
 }
 
+.resume_item .courses-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume_item .courses-container .course-list {
+  width: 48%;
+  list-style: none;
+  padding-left: 0;
+}
+
+.resume_item .courses-container .course-list li {
+  margin-bottom: 20px;
+}
+
 .btn__baixar {
   background: var(--main-pink);
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.908));
@@ -251,7 +266,7 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  margin: 11% 0 0 40%;
+  margin: 11% 0 0 35%;
   position: relative;
 }
 

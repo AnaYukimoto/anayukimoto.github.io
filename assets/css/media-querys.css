@@ -164,8 +164,16 @@
         margin: 10% 0 0 25%;
     }
 
+    .resume_item .courses-container {
+        flex-direction: column;
+    }
+
+    .resume_item .courses-container .course-list {
+        width: 100%;
+    }
+    
     .btn__baixar {
-        margin: 5% 0 0 25%;
+        margin: 5% 0 0 27%;
     }
 
     /*Projetos*/

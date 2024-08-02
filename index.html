@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <title>Inicial</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/estilo.css" />
-  <link rel="stylesheet" href="./css/projetos.css">
-  <link rel="stylesheet" href="./css/certificates.css">
-  <link rel="stylesheet" href="./css/media-querys.css">
-  <link rel="icon" type="icon" href="./img/logo.png" />
+  <link rel="stylesheet" href="./assets/css/estilo.css" />
+  <link rel="stylesheet" href="./assets/css/projetos.css">
+  <link rel="stylesheet" href="./assets/css/certificates.css">
+  <link rel="stylesheet" href="./assets/css/media-querys.css">
+  <link rel="icon" type="icon" href="./assets/img/logo.png" />
 
   <script src="https://kit.fontawesome.com/0df5057ab7.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -28,7 +28,7 @@
   <nav id="navbar" class="nav">
 
     <a href="index.html">
-      <img src="img/AEY.png" id="logo" class="logo" />
+      <img src="./assets/img/AEY.png" id="logo" class="logo" />
     </a>
 
     <ul class="nav-list">
@@ -72,21 +72,12 @@
 
   <!-- PROJECTS SECTION -->
   <section id="projects" class="projects-section">
-    <h2 class="projects-section-header">Alguns dos Meus Projetos:</h2>
-
-    <section class="project-section">
-      <div class="contact-project">
-        <a href="https://github.com/AnaYukimoto" target="_blank" class="btn contact-details" id="profile-link">
-          <i class="fab fa-github"></i> AnaYukimoto
-        </a>
-        <a href="https://codepen.io/AnaElizaYukimoto" target="_blank" class="btn contact-details">
-          <i class="fa-brands fa-codepen fa-lg"></i> AnaElizaYukimoto
-        </a>
-        <a href="https://replit.com/@AnaElizaYuki" target="_blank" class="btn contact-details">
-          <i class="fa-solid fa-code fa-sm"></i> AnaElizaYuki
-        </a>
-      </div>
-    </section>
+    <div class="projects-header-container">
+      <h2 class="projects-section-header">Meus Projetos:</h2>
+      <a href="https://github.com/AnaYukimoto" target="_blank" class="btn projects-details" id="profile-link">
+        <i class="fab fa-github" style="color: var(--main-pink); text-shadow: 0 0 5px var(--main-pink); "></i> AnaYukimoto
+      </a>
+    </div>
 
     <div style="position: relative;" class="carousel-projects">
 
@@ -105,7 +96,7 @@
         </div>
         <div class="slick-slide">
           <a href="https://github.com/AnaYukimoto/devLinks.git" target="_blank" class="project project-tile">
-            <img class="project-image" src="./img/projetos/devLinks.png.png" alt="project-image" />
+            <img class="project-image" src="./assets/img/projetos/devLinks.png.png" alt="project-image" />
             <p class="project-title">
               <span class="code">&lt;</span>
               DevLinks - Rocketseat
@@ -115,7 +106,7 @@
         </div>
         <div class="slick-slide">
           <a href="https://github.com/AnaYukimoto/zooli.github.io.git" target="_blank" class="project project-tile">
-            <img class="project-image" src="./img/projetos/zooli.png" alt="project-image" />
+            <img class="project-image" src="./assets/img/projetos/zooli.png" alt="project-image" />
             <p class="project-title">
               <span class="code">&lt;</span>
               Site do TCC - Etec
@@ -125,7 +116,7 @@
         </div>
         <div class="slick-slide">
           <a href="https://github.com/AnaYukimoto/Spotify.git" target="_blank" class="project project-tile">
-            <img class="project-image" src="./img/projetos/spotify.png" alt="project-image" />
+            <img class="project-image" src="./assets/img/projetos/spotify.png" alt="project-image" />
             <p class="project-title">
               <span class="code">&lt;</span>
               Spotify - Imersão Front-End
@@ -136,7 +127,7 @@
         <div class="slick-slide">
           <a href="https://replit.com/@AnaElizaYuki?path=folder/Atividades%20em%20Python" target="_blank"
             class="project project-tile">
-            <img class="project-image" src="./img/projetos/python.png" alt="project-image" />
+            <img class="project-image" src="./assets/img/projetos/python.png" alt="project-image" />
             <p class="project-title">
               <span class="code">&lt;</span>
               Projetos em Python
@@ -147,7 +138,7 @@
         <div class="slick-slide">
           <a href="https://github.com/AnaYukimoto/panesoffice.github.io.git" target="_blank"
             class="project project-tile">
-            <img class="project-image" src="./img/projetos/panesoffice.png" alt="project-image" width="500px" />
+            <img class="project-image" src="./assets/img/projetos/panesoffice.png" alt="project-image" width="500px" />
             <p class="project-title">
               <span class="code">&lt;</span>
               Site para Padaria
@@ -169,7 +160,7 @@
         <div class="slick-slide">
           <a href="https://github.com/AnaYukimoto/planetravel.github.io.git" target="_blank"
             class="project project-tile">
-            <img class="project-image" src="./img/projetos/indexAviao.png" alt="project-image" width="500px" />
+            <img class="project-image" src="./assets/img/projetos/indexAviao.png" alt="project-image" width="500px" />
             <p class="project-title">
               <span class="code">&lt;</span>
               Site de Viagem
@@ -299,7 +290,17 @@
       <div class="slick-carousel">
         <div class="slick-slide">
           <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./img/certificates/certAluraImersao.jpg" alt="certificates" />
+            <img class="certificates-image" src="./assets/img/certificates/certFundamentosIA.jpg" alt="certificates" />
+            <p class="certificates-title">
+              <span class="code">&lt;</span>
+              Fundamentos IA para Devs
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+        </div>
+        <div class="slick-slide">
+          <a href="certificates.html" class="certificates certificates-tile">
+            <img class="certificates-image" src="./assets/img/certificates/certAluraImersao.jpg" alt="certificates" />
             <p class="certificates-title">
               <span class="code">&lt;</span>
               Imersão Front-End Alura
@@ -309,17 +310,17 @@
         </div>
         <div class="slick-slide">
           <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./img/certificates/certAWS.jpg" alt="certificates" />
+            <img class="certificates-image" src="./assets/img/certificates/certAWS.jpg" alt="certificates" />
             <p class="certificates-title">
               <span class="code">&lt;</span>
-              Amazon Web Services (AWS)
+              Amazon Web Services - AWS
               <span class="code">&#47;&gt;</span>
             </p>
           </a>
         </div>
         <div class="slick-slide">
           <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./img/certificates/certExcelPowerBI.jpg" alt="certificates" />
+            <img class="certificates-image" src="./assets/img/certificates/certExcelPowerBI.jpg" alt="certificates" />
             <p class="certificates-title">
               <span class="code">&lt;</span>
               Gerenciamento de Dados
@@ -329,7 +330,7 @@
         </div>
         <div class="slick-slide">
           <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./img/certificates/certCisco.png" alt="certificates" />
+            <img class="certificates-image" src="./assets/img/certificates/certCisco.png" alt="certificates" />
             <p class="certificates-title">
               <span class="code">&lt;</span>
               IT Essentials
@@ -339,7 +340,7 @@
         </div>
         <div class="slick-slide">
           <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./img/certificates/certDesignResponsive.jpg" alt="certificates" />
+            <img class="certificates-image" src="./assets/img/certificates/certDesignResponsive.jpg" alt="certificates" />
             <p class="certificates-title">
               <span class="code">&lt;</span>
               Web Design Responsive
@@ -349,7 +350,7 @@
         </div>
         <div class="slick-slide">
           <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./img/certificates/certDiscover.png" alt="certificates" />
+            <img class="certificates-image" src="./assets/img/certificates/certDiscover.png" alt="certificates" />
             <p class="certificates-title">
               <span class="code">&lt;</span>
               Discover
@@ -359,7 +360,7 @@
         </div>
         <div class="slick-slide">
           <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./img/certificates/certPacoteOffice.jpg" alt="certificates"
+            <img class="certificates-image" src="./assets/img/certificates/certPacoteOffice.jpg" alt="certificates"
               width="500px" />
             <p class="certificates-title">
               <span class="code">&lt;</span>
@@ -370,7 +371,7 @@
         </div>
         <div class="slick-slide">
           <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./img/certificates/certProa.jpg" alt="certificates" />
+            <img class="certificates-image" src="./assets/img/certificates/certProa.jpg" alt="certificates" />
             <p class="certificates-title">
               <span class="code">&lt;</span>
               Plataforma Proa
@@ -380,7 +381,7 @@
         </div>
         <div class="slick-slide">
           <a href="certificates.html"  class="certificates certificates-tile">
-            <img class="certificates-image" src="./img/certificates/certPython.png" alt="certificates" width="500px" />
+            <img class="certificates-image" src="./assets/img/certificates/certPython.png" alt="certificates" width="500px" />
             <p class="certificates-title">
               <span class="code">&lt;</span>
               Introdução à Programação
@@ -436,10 +437,10 @@
 
 
   <!-- SCRIPT -->
-  <script src="./js/nav.js"></script>
-  <script src="./js/typingtext.js"></script>
-  <script src="./js/slickcarousel.js"></script>
-  <script src="./js/contact.js"></script>
+  <script src="./assets/js/nav.js"></script>
+  <script src="./assets/js/typingtext.js"></script>
+  <script src="./assets/js/slickcarousel.js"></script>
+  <script src="./assets/js/contact.js"></script>
 
 </body>
 
