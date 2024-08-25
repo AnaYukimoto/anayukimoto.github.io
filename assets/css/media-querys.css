@@ -15,6 +15,25 @@
     #contact-form{
         width: 100%;
     }
+    
+    .certificates-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .img-container {
+        height: 200px;
+    }
+    
+    .img-content-hover {
+        display: none;
+    }
+
+    .img-content {
+        display: block; 
+        padding: 1rem 0;
+    }
+    
 }
 
 /* 460px / 16px = 28.75em */
@@ -35,9 +54,9 @@
         display: flex;
         margin-left: auto;
     }
-
    
 }
+
 
 @media (max-width: 600px) {
 
@@ -203,10 +222,9 @@
     /*Certificados*/
 
     .card__certificates {
-        column-count: 2;
+        column-count: 5;
         column-gap: 20px;
         flex-direction: column;
-
     }
 
     .card__certificates img {
@@ -217,15 +235,19 @@
         margin-right: auto;
     }
 
-}
-
-@media screen and (max-width: 1024px) {
-    .img-content-hover {
-        display: none;
+    .certificates-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 2rem;
+        justify-items: center; 
     }
 
-    .img-content {
-        display: block; 
-        padding: 1rem 0;
+    .img-container {
+        height: 150px;
     }
+
+    .certificates-section {
+        padding: 0 2rem;
+    }
+
 }
