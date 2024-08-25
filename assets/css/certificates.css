@@ -1,57 +1,85 @@
-body {
-    background-color: #000;
-    background-image: linear-gradient(50deg, #0e0e0e 0%, #1d1e1f 60%, #0e0e0e 100%);
-    font-size: 14px;
-    padding: 0;
-    text-align: justify;
-}
-
-h2 {
-    margin-top: 10%;
-}
-
 .certificates-section {
-    text-align: center;
-    padding: 10rem 2rem;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 4rem;
+    flex-direction: row;
+    margin-bottom: 10%;
 }
 
 .certificates-section-header {
-    margin: 0 auto 3rem auto;
-    font-size: 4rem;
+    margin-bottom: 5vh;
+    flex: 1;
 }
 
-.certificates-section-header>p {
-    font-size: 14px;
+.certificates-section-header > p {
     font-style: italic;
     text-align: center;
     color: var(--main-pink);
+} 
+
+.certificates-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-top: 4%;
+    justify-items: center; 
 }
 
-.certificates-section {
-    margin-bottom: 3%;
+.certificates-link {
+    display: block; 
 }
 
-.certificates-title {
-    font-size: 2rem;
-    padding: 2rem 0.5rem;
+.img-container {
+    position: relative;
+    width: 100%; 
+    height: 250px; 
+    overflow: hidden;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.contact-certificates {
+
+.certificates-image {
+    display: block;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+}
+
+.img-content {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    background: #1c023be3; 
+    color: #fff;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
 }
 
-.code {
-    color: #f0f0f0;
-    transition: color 0.3s ease-out;
+.img-container:hover .img-content {
+    transform: translateY(0); 
 }
 
-.certificates:hover .code {
-    color: var(--main-pink);
+.img-content a {
+    color: var(--main-pink); 
+    margin-top: 0.5rem; 
 }
 
 /*Pagina Certificates*/
+
 .container_certificates {
     width: 100%;
     display: flex;
@@ -71,7 +99,6 @@ h2 {
     margin-bottom: 20px;
     width: 85%;
     max-width: 100%;
-
 }
 
 .card__certificates img {
@@ -79,8 +106,6 @@ h2 {
     height: 220px;
     object-fit: cover;
 }
-
-
 
 .card_content__certificates {
     padding: 20px;
@@ -90,7 +115,6 @@ h2 {
     font-size: 19px;
     font-weight: 600;
     margin-bottom: 10px;
-
 }
 
 .card_content__certificates p {
@@ -103,9 +127,7 @@ h2 {
     color: var(--main-pink);
 }
 
-
 .icon-text i {
     margin-right: 15px;
     font-size: 22px;
-
 }

@@ -5,9 +5,10 @@
   <meta charset="UTF-8" />
   <title>Inicial</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/estilo.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/projetos.css">
   <link rel="stylesheet" href="./assets/css/certificates.css">
+  <link rel="stylesheet" href="./assets/css/contact.css">
   <link rel="stylesheet" href="./assets/css/media-querys.css">
   <link rel="icon" type="icon" href="./assets/img/logo.png" />
 
@@ -24,7 +25,7 @@
 </head>
 
 <body>
-  <!--NAV -->
+  <!-- NAV SECTION -->
   <nav id="navbar" class="nav">
 
     <a href="index.html">
@@ -54,7 +55,6 @@
     </button>
   </nav>
 
-
   <!-- WELCOME SECTION -->
   <section id="welcome-section" class="welcome-section">
     <div class="text-content">
@@ -68,14 +68,13 @@
     </div>
   </section>
 
-
-
   <!-- PROJECTS SECTION -->
   <section id="projects" class="projects-section">
     <div class="projects-header-container">
       <h2 class="projects-section-header">Meus Projetos:</h2>
       <a href="https://github.com/AnaYukimoto" target="_blank" class="btn projects-details" id="profile-link">
-        <i class="fab fa-github" style="color: var(--main-pink); text-shadow: 0 0 5px var(--main-pink); "></i> AnaYukimoto
+        <i class="fab fa-github" style="color: var(--main-pink); text-shadow: 0 0 5px var(--main-pink); "></i>
+        AnaYukimoto
       </a>
     </div>
 
@@ -149,7 +148,8 @@
         <div class="slick-slide">
           <a href="https://codepen.io/AninhaYuki/pen/yLxJyMq" target="_blank" class="project project-tile">
             <img class="project-image"
-              src="https://www.freecodecamp.org/news/content/images/size/w600/2022/03/image-145.png" alt="project-image" />
+              src="https://www.freecodecamp.org/news/content/images/size/w600/2022/03/image-145.png"
+              alt="project-image" />
             <p class="project-title">
               <span class="code">&lt;</span>
               Pinguim feito com CSS
@@ -211,25 +211,6 @@
       </div>
 
       <div class="tooltip">
-        <i class="fa-brands fa-github" style="color:rgb(255, 255, 255)"></i>
-        <div class="tooltip-text">
-          <p>Github</p>
-        </div>
-      </div>
-
-      <div class="tooltip">
-        <i class="fa-brands fa-git-alt" style="color:rgb(255, 106, 0)"></i>
-        <div class="tooltip-text">
-          <p>Git</p>
-          <ul>
-            <li>
-              DevLinks - Rocketseat
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="tooltip">
         <i class="fa-brands fa-java " style="color:rgb(255, 0, 0)"></i>
         <div class="tooltip-text">
           <p>Java</p>
@@ -271,128 +252,140 @@
         </div>
       </div>
 
-    </div>
-    </div>
+      <div class="tooltip">
+        <i class="fa-brands fa-github" style="color:rgb(255, 255, 255)"></i>
+        <div class="tooltip-text">
+          <p>Github</p>
+        </div>
+      </div>
 
-  </section>
-
-
-  <!-- CERTFICATES SECTION -->
-
-  <section id="certificates" class="certificates-section">
-    <div class="certificates-section-header">
-      <h2>Meus Certificados:</h2>
-      <p>Clique e descubra mais...</p>  
-    </div>
-   
-    <div style="position: relative;" class="carousel-certificates">
-
-      <div class="slick-carousel">
-        <div class="slick-slide">
-          <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./assets/img/certificates/certFundamentosIA.jpg" alt="certificates" />
-            <p class="certificates-title">
-              <span class="code">&lt;</span>
-              Fundamentos IA para Devs
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-        </div>
-        <div class="slick-slide">
-          <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./assets/img/certificates/certAluraImersao.jpg" alt="certificates" />
-            <p class="certificates-title">
-              <span class="code">&lt;</span>
-              Imersão Front-End Alura
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-        </div>
-        <div class="slick-slide">
-          <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./assets/img/certificates/certAWS.jpg" alt="certificates" />
-            <p class="certificates-title">
-              <span class="code">&lt;</span>
-              Amazon Web Services - AWS
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-        </div>
-        <div class="slick-slide">
-          <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./assets/img/certificates/certExcelPowerBI.jpg" alt="certificates" />
-            <p class="certificates-title">
-              <span class="code">&lt;</span>
-              Gerenciamento de Dados
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-        </div>
-        <div class="slick-slide">
-          <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./assets/img/certificates/certCisco.png" alt="certificates" />
-            <p class="certificates-title">
-              <span class="code">&lt;</span>
-              IT Essentials
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-        </div>
-        <div class="slick-slide">
-          <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./assets/img/certificates/certDesignResponsive.jpg" alt="certificates" />
-            <p class="certificates-title">
-              <span class="code">&lt;</span>
-              Web Design Responsive
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-        </div>
-        <div class="slick-slide">
-          <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./assets/img/certificates/certDiscover.png" alt="certificates" />
-            <p class="certificates-title">
-              <span class="code">&lt;</span>
-              Discover
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-        </div>
-        <div class="slick-slide">
-          <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./assets/img/certificates/certPacoteOffice.jpg" alt="certificates"
-              width="500px" />
-            <p class="certificates-title">
-              <span class="code">&lt;</span>
-              Pacote Office
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-        </div>
-        <div class="slick-slide">
-          <a href="certificates.html" class="certificates certificates-tile">
-            <img class="certificates-image" src="./assets/img/certificates/certProa.jpg" alt="certificates" />
-            <p class="certificates-title">
-              <span class="code">&lt;</span>
-              Plataforma Proa
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-        </div>
-        <div class="slick-slide">
-          <a href="certificates.html"  class="certificates certificates-tile">
-            <img class="certificates-image" src="./assets/img/certificates/certPython.png" alt="certificates" width="500px" />
-            <p class="certificates-title">
-              <span class="code">&lt;</span>
-              Introdução à Programação
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
+      <div class="tooltip">
+        <i class="fa-brands fa-git-alt" style="color:rgb(255, 106, 0)"></i>
+        <div class="tooltip-text">
+          <p>Git</p>
+          <ul>
+            <li>
+              DevLinks - Rocketseat
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- CERTFICATES SECTION -->
+  <section id="certificates" class="certificates-section">
+    <div class="certificates-section-header">
+      <h2>Meus Certificados:</h2>
+    </div>
+    
+    <div class="certificates-container">
+      
+        <figure class="img-container">
+          <img class="certificates-image" src="./assets/img/certificates/certFundamentosIA.jpg" alt="certificates" />
+          <figcaption class="img-content">
+            <span class="code">&lt;</span>
+            Fundamentos IA para Devs
+            <span class="code">&#47;&gt;</span>
+            <a href="certificates.html" class="certificates certificates-link">Saiba Mais</a>
+          </figcaption>
+        </figure>
+      
+        <figure class="img-container">
+          <img class="certificates-image" src="./assets/img/certificates/certAluraImersao.jpg" alt="certificates" />
+          <figcaption class="img-content">
+            <span class="code">&lt;</span>
+            Imersão Front-End da Alura
+            <span class="code">&#47;&gt;</span>
+            <a href="certificates.html" class="certificates certificates-link">Saiba Mais</a>
+          </figcaption>
+        </figure>
+
+        <figure class="img-container">
+          <img class="certificates-image" src="./assets/img/certificates/certAWS.jpg" alt="certificates" />
+          <figcaption class="img-content">
+            <span class="code">&lt;</span>
+            Amazon Web Services - AWS
+            <span class="code">&#47;&gt;</span>
+            <a href="certificates.html" class="certificates certificates-link">Saiba Mais</a>
+          </figcaption>
+        </figure>
+
+        <figure class="img-container">
+          <img class="certificates-image" src="./assets/img/certificates/certExcelPowerBI.jpg" alt="certificates" />
+          <figcaption class="img-content">
+            <span class="code">&lt;</span>
+            Gerenciamento de Dados
+            <span class="code">&#47;&gt;</span>
+            <a href="certificates.html" class="certificates certificates-link">Saiba Mais</a>
+          </figcaption>
+        </figure>
+
+        <!-- <figure class="img-container">
+          <img class="certificates-image" src="./assets/img/certificates/certCisco.png" alt="certificates" />
+          <figcaption class="img-content">
+            <span class="code">&lt;</span>
+            IT Essentials
+            <span class="code">&#47;&gt;</span>
+             <a href="certificates.html" class="certificates certificates-link">Saiba Mais</a>
+          </figcaption>
+        </figure> -->
+
+        <figure class="img-container">
+          <img class="certificates-image" src="./assets/img/certificates/certDesignResponsive.jpg" alt="certificates" />
+          <figcaption class="img-content">
+            <span class="code">&lt;</span>
+            Web Design Responsive... 
+            <span class="code">&#47;&gt;</span>
+            <a href="certificates.html" class="certificates certificates-link">Saiba Mais</a>
+          </figcaption>
+        </figure>
+
+        <!--<figure class="img-container">
+          <img class="certificates-image" src="./assets/img/certificates/certDiscover.png" alt="certificates" />
+          <figcaption class="img-content">
+            <span class="code">&lt;</span>
+            Discover
+            <span class="code">&#47;&gt;</span>
+             <a href="certificates.html" class="certificates certificates-link">Saiba Mais</a>
+          </figcaption>
+        </figure>
+
+         <figure class="img-container">
+          <img class="certificates-image" src="./assets/img/certificates/certPacoteOffice.jpg" alt="certificates"
+            width="500px" />
+          <figcaption class="img-content">
+            <span class="code">&lt;</span>
+            Pacote Office
+            <span class="code">&#47;&gt;</span>
+             <a href="certificates.html" class="certificates certificates-link">Saiba Mais</a>
+          </figcaption>
+        </figure>
+
+        <figure class="img-container">
+          <img class="certificates-image" src="./assets/img/certificates/certProa.jpg" alt="certificates" />
+          <figcaption class="img-content">
+            <span class="code">&lt;</span>
+            Plataforma Proa
+            <span class="code">&#47;&gt;</span>
+             <a href="certificates.html" class="certificates certificates-link">Saiba Mais</a>
+          </figcaption>
+        </figure> -->
+
+        <figure class="img-container">
+          <img class="certificates-image" src="./assets/img/certificates/certPython.png" alt="certificates"
+            width="500px" />
+          <figcaption class="img-content">
+            <span class="code">&lt;</span>
+            Introdução à Programação
+            <span class="code">&#47;&gt;</span>
+            <a href="certificates.html" class="certificates certificates-link">Saiba Mais</a>
+          </figcaption>
+        </figure>
+
+      </a>
+    </div>
+  </section>
 
   <!-- CONTACT SECTION-->
   <section class="contact-section">
