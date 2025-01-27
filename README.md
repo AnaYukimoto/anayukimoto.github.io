@@ -4,9 +4,11 @@ Bem-vindo ao meu portfólio! Este é um espaço onde compartilho meus projetos, 
 
 ## Cores Base
 
-- Preto: ![Preto](https://via.placeholder.com/15/303841/000000?text=+) `#303841`
-- Rosa: ![Rosa](https://via.placeholder.com/15/E90A63/000000?text=+) `#e90a63`
-- Roxo: ![Roxo](https://via.placeholder.com/15/1C023B/000000?text=+) `#1c023b`
+- ![Preto](https://img.shields.io/badge/Preto-%230E0E0E?style=flat-square&logoColor=white) `#0e0e0e`
+- ![Cinza](https://img.shields.io/badge/Cinza-%23303841?style=flat-square&logoColor=white) `#303841`
+- ![Rosa](https://img.shields.io/badge/Rosa-%23E90A63?style=flat-square&logoColor=white) `#e90a63`
+- ![Roxo](https://img.shields.io/badge/Roxo-%231C023B?style=flat-square&logoColor=white) `#1c023b`
+
 
 As cores base do meu portfólio são preto, rosa e roxo, para transmitir uma sensação de elegância, modernidade e criatividade em todo o meu portfólio.
 
