@@ -39,7 +39,6 @@ body {
 h1,
 h2 {
   font-weight: 600;
-  text-align: center;
 }
 
 h1 {
@@ -175,7 +174,7 @@ img {
 /* Welcome section */
 
 #typing-text {
-  text-align: right;
+  text-align: left;
   text-shadow: 0 0 5px var(--main-pink); 
 }
 
@@ -201,22 +200,25 @@ img {
   justify-content: flex-end;
   width: 100%;
   height: 100vh;
-  background-image: url(../img/inicial.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.welcome-img {
+  width: 35%;
+  height: auto;
+  margin: 5%;
+  border-radius: 12px; 
 }
 
 .welcome-section p {
   font-size: 2.8rem;
-  font-weight: 200;
   font-style: italic;
   color: var(--main-pink);
   margin-bottom: 10%;
 }
 
 .text-content {
-  text-align: right;
-  margin-right: 10%;
+  text-align: left;
+  margin-right: 15%;
 }
 
 /* Footer */

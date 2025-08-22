@@ -13,4 +13,4 @@ function typeWriter(textElement, delay) {
     type();
   }
   const typingText = document.getElementById('typing-text');
-  typeWriter(typingText, 100);
+  typeWriter(typingText, 50);
