@@ -33,7 +33,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.4;
   color: var(--main-white);
-  background-image: linear-gradient(50deg, #0e0e0e 0%, #1d1e1f 60%, #0e0e0e 100%);
+  background-image: linear-gradient(to right, #1c1d1e, #000000);
 }
 
 h1,
@@ -173,6 +173,30 @@ img {
 
 /* Welcome section */
 
+.welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 4%;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/img/inicial.png);  
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome-section p {
+  font-size: 2.8rem;
+  font-style: italic;
+  color: var(--main-pink);
+  margin-bottom: 10%;
+}
+
+.text-content {
+  text-align: left;
+  margin-left: 10%;
+}
+
 #typing-text {
   text-align: left;
   text-shadow: 0 0 5px var(--main-pink); 
@@ -192,33 +216,6 @@ img {
 
 .curriculo:hover {
   border-color: var(--main-pink);
-}
-
-.welcome-section {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  height: 100vh;
-}
-
-.welcome-img {
-  width: 35%;
-  height: auto;
-  margin: 5%;
-  border-radius: 12px; 
-}
-
-.welcome-section p {
-  font-size: 2.8rem;
-  font-style: italic;
-  color: var(--main-pink);
-  margin-bottom: 10%;
-}
-
-.text-content {
-  text-align: left;
-  margin-right: 15%;
 }
 
 /* Footer */
